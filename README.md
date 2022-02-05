@@ -29,3 +29,10 @@ This website hosts transcripts of many popular TV shows and movies.
 - Query the data and create javascript arrays (Javascript, Python, SQL)
 - Visualize on webpage (Javascript)
 - Machine Learning to predict future interations (scikit-learn) (??)
+
+
+
+## References
+[Word Predictor](https://towardsdatascience.com/building-a-next-word-predictor-in-tensorflow-e7e681d4f03f#:~:text=Next%20Word%20Prediction%20or%20what,or%20emails%20without%20realizing%20it.)
+[Next Word Prediction](https://towardsdatascience.com/next-word-prediction-with-nlp-and-deep-learning-48b9fe0a17bf)
+[Next Word Prediction GitHub](https://github.com/Bharath-K3/Next-Word-Prediction-with-NLP-and-Deep-Learning)
