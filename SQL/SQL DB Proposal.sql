@@ -23,11 +23,8 @@ CREATE TABLE "Episode" (
 CREATE TABLE "Script" (
     "episode_id" int   NOT NULL,
     "emp_name" varchar   NOT NULL,
-    "top_scene" boolan   NOT NULL,
-    "end_scene" boolan   NOT NULL,
     "line" varchar   NOT NULL,
     "line_id" int   NOT NULL,
-    "scene_id" int   NOT NULL,
     CONSTRAINT "pk_Script" PRIMARY KEY (
         "line_id"
      )
