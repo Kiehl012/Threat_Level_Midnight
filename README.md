@@ -10,8 +10,11 @@ SQL Table Design
 
 ## Viz
 - A d3 time measure viz that shows characters line count as the show progresses https://observablehq.com/@d3/bar-chart-race
-- An Interactive Visualization of Every Line https://pudding.cool/2017/03/hamilton/
+- An Interactive Visualization of Every Line https://pudding.cool/2017/03/hamilton/<br>
+- Tableau:<br> 
 https://public.tableau.com/app/profile/katey.harris/viz/TheOffice_16443470522060/theofficelinesbyseason?publish=yes
+- gif example<br>
+![](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 # Machine Learning
 - machine learning to generate a bio for each character
 - machine learning to generate a short a predicted lines<br>
