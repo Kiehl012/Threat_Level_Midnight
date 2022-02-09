@@ -12,13 +12,8 @@ SQL Table Design
 - A d3 time measure viz that shows characters line count as the show progresses https://observablehq.com/@d3/bar-chart-race
 - An Interactive Visualization of Every Line https://pudding.cool/2017/03/hamilton/<br>
 - Tableau:<br> 
-[![](![Snap74](https://user-images.githubusercontent.com/90797036/153076898-90b22ab9-9949-4a7d-9807-d2fbc0cc8873.png)](https://public.tableau.com/app/profile/katey.harris/viz/TheOffice_16443470522060/theofficelinesbyseason?publish=yes)
+[![](https://user-images.githubusercontent.com/90797036/153099441-15300598-eef5-4883-b77b-57b024c16601.gif)](https://public.tableau.com/app/profile/katey.harris/viz/TheOffice_16443470522060/theofficelinesbyseason?publish=yes)
 
-Try simply the syntax:
-
-[![name](link to image on GH)](link to your URL)
-- gif example<br>
-![](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 # Machine Learning
 - machine learning to generate a bio for each character
 - machine learning to generate a short a predicted lines<br>
