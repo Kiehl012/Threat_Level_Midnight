@@ -22,7 +22,7 @@ This website hosts transcripts of many popular TV shows and movies.
    - Ranked by importance of words spoken by each character (??)
 3) Which characters interacted the most with each other?
 4) What were the most commonly used phrases throughout the show?
-5) How did the amount of lines a character had change over the run of the show?
+5) Can we generate text for one or more characters with NLP Machine Learning?
 
 ## Data Pipeline
 - Scrape script from the website (API, Python)
