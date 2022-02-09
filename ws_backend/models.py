@@ -21,7 +21,7 @@ class Episodes(Base):
     season_no = Column(Integer)
     episode_no = Column(Integer)
 
-Class Scripts(Base):
+class Scripts(Base):
     """
     Script table
     """
@@ -30,5 +30,5 @@ Class Scripts(Base):
     line = Column(String)
     emp_name = Column(String)
     episode_id = Column(Integer)
-
+    sentiment = Column(Float)
 
