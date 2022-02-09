@@ -30,12 +30,7 @@ CREATE TABLE "Script" (
      )
 );
 
-CREATE TABLE "Scene" (
-    "scene_id" int   NOT NULL,
-    "emp_name" varchar   NOT NULL,
-    CONSTRAINT "pk_Scene" PRIMARY KEY (
-        "scene_id"
-     )
+
 );
 
 ALTER TABLE "Characters" ADD CONSTRAINT "fk_Characters_emp_name" FOREIGN KEY("emp_name")
