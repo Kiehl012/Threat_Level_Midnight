@@ -17,8 +17,9 @@ This website hosts transcripts of many popular TV shows and movies.
 
 ### Questions to Answer:
 1) Who are the characters of "The Office"?   
-2) What was each character's overall sentiment throughout the show?   
-3) Can we generate text for one or more characters with NLP Machine Learning?
+2) Which character had the most lines throughout the show?
+3) What was each character's overall sentiment throughout the show?   
+4) Can we generate text for one or more characters with NLP Machine Learning?
 
 ## Data Pipeline
 - Scrape script from the website (API, Python)
