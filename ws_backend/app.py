@@ -13,41 +13,39 @@ app.secret_key = os.environ['APP_SECRET_KEY']
 def help():
     return(
     '''
-    Welcome to the Oreilly Book API!
+    Welcome to the Threat Level Midnight API!
     Available Routes:
     /
     /api/v1.0/help
-    /api/v1.0/title/<book title>
-    /api/v1.0/bookid/start/end
-    /api/v1.0/add_book/
+    /api/v1.0/actor/<actor name>
+    /api/v1.0/actor/<actor name>/<episode>
+    /api/v1.0/actor/<actor name>/<episode start>/<episode end>
+    /api/v1.0/episode/<ep number>
+    /api/v1.0/episode/start/end/
     ''')
 
 
-@app.route("/api/v1.0/title", methods=('GET'))
-def title_search():
-    title = requests.args.get('title')
-    print(title)
-    results = Book.query.filter(Book.title.match(%title%))
+@app.route("/api/v1.0/actor", methods=('GET'))
+def actor_search():
+    results = {} 
     return jsonify(results)
 
-@app.route("/api/v1.0/bookid/start")
-@app.route("/api/v1.0/bookid/start/end") 
-def bookid_lookup(start=None, end=None):
+@app.route("/api/v1.0/actor/episodenum")
+@app.route("/api/v1.0/actor/episode_start/episode_end") 
+def actor_lookup(start=None, end=None):
+    results = {}
     if not end:
-        results = Book.query(id=start)
+        results
     else:
-        results = session.query.\
-        filter(Book.id >= start).\
-        filter(Book.id <= end).all()
+        #results = session.query.\
+        #filter(Book.id >= start).\
+        #filter(Book.id <= end).all()
+        results
     return jsonify(results)
-
-@app.route("/api/v1.0/add_book", methods=('POST'))
-def add_book():
-    return 0
 
 @app.route("/", methods=('GET'))
 def index():
-    results = Book.query.all()
+    results = {} 
     return jsonify(reults)
 
 if __name__ == '__main__':
