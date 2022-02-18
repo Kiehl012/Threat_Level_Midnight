@@ -1,5 +1,5 @@
 from database import Base
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Float, Date
 from sqlalchemy.types import DateTime
 from sqlalchemy.dialects.postgresql import ARRAY
 
@@ -19,7 +19,11 @@ class Episodes(Base):
     episode_id = Column(Integer, primary_key=True)
     title = Column(String(256))
     season_no = Column(Integer)
+    line_id = Column(Integer)
     episode_no = Column(Integer)
+    air_date = Column(Date)
+    writer = Column(String)
+    director = Column(String)
 
 class Scripts(Base):
     """
@@ -30,5 +34,6 @@ class Scripts(Base):
     line = Column(String)
     emp_name = Column(String)
     episode_id = Column(Integer)
+    season = Column(Integer)
+    episode = Column(Integer) 
     sentiment = Column(Float)
-
