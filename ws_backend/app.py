@@ -21,27 +21,38 @@ def help():
     /api/v1.0/actor/<actor name>/<episode>
     /api/v1.0/actor/<actor name>/<episode start>/<episode end>
     /api/v1.0/episode/<ep number>
-    /api/v1.0/episode/start/end/
+    /api/v1.0/episode/<ep start>/<ep end>
     ''')
 
 
 @app.route("/api/v1.0/actor", methods=('GET'))
-def actor_search():
-    results = {} 
+@app.route("/api/v1.0/actor/start", methods=('GET')
+@app.route("/api/v1.0/actor/start/end") 
+def actor_lookup(actor, start=None, end=None):
+    if not start:
+        results = session.query.filter(Scripts.emp_name == actor).all()
+    elif not end:
+        results = session.query.filter(Scripts.emp_name == actor).\
+                  filter(Scripts.episode_id >= start).all()
+    else:
+        results = session.query.filter(Scripts.emp_name == actor).\
+                  filter(Scripts.episode_id >= start).\
+                  filter(Scripts.episode_id <= end).all()
     return jsonify(results)
 
-@app.route("/api/v1.0/actor/episodenum")
-@app.route("/api/v1.0/actor/episode_start/episode_end") 
-def actor_lookup(start=None, end=None):
-    results = {}
-    if not end:
-        results
+
+@app.route("/api/v1.0/episode/start", methods=('GET'))
+@app.route("/api/v1.0/episode/start/end", methods=('GET'))
+def episode_lookup(start=None, end=None)
+    if not start:
+        result = {}
+    elif not end:
+        results = session.query.filter(Scripts.episode_id = start).all()
     else:
-        #results = session.query.\
-        #filter(Book.id >= start).\
-        #filter(Book.id <= end).all()
-        results
+        results = session.query.filter(Scripts.episode_id >= start).\
+                  filter(Scripts.episode_id < = end).all()
     return jsonify(results)
+
 
 @app.route("/", methods=('GET'))
 def index():
