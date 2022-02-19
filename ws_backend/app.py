@@ -13,41 +13,50 @@ app.secret_key = os.environ['APP_SECRET_KEY']
 def help():
     return(
     '''
-    Welcome to the Oreilly Book API!
+    Welcome to the Threat Level Midnight API!
     Available Routes:
     /
     /api/v1.0/help
-    /api/v1.0/title/<book title>
-    /api/v1.0/bookid/start/end
-    /api/v1.0/add_book/
+    /api/v1.0/actor/<actor name>
+    /api/v1.0/actor/<actor name>/<episode>
+    /api/v1.0/actor/<actor name>/<episode start>/<episode end>
+    /api/v1.0/episode/<ep number>
+    /api/v1.0/episode/<ep start>/<ep end>
     ''')
 
 
-@app.route("/api/v1.0/title", methods=('GET'))
-def title_search():
-    title = requests.args.get('title')
-    print(title)
-    results = Book.query.filter(Book.title.match(%title%))
-    return jsonify(results)
-
-@app.route("/api/v1.0/bookid/start")
-@app.route("/api/v1.0/bookid/start/end") 
-def bookid_lookup(start=None, end=None):
-    if not end:
-        results = Book.query(id=start)
+@app.route("/api/v1.0/actor", methods=('GET'))
+@app.route("/api/v1.0/actor/start", methods=('GET')
+@app.route("/api/v1.0/actor/start/end") 
+def actor_lookup(actor, start=None, end=None):
+    if not start:
+        results = session.query.filter(Scripts.emp_name == actor).all()
+    elif not end:
+        results = session.query.filter(Scripts.emp_name == actor).\
+                  filter(Scripts.episode_id >= start).all()
     else:
-        results = session.query.\
-        filter(Book.id >= start).\
-        filter(Book.id <= end).all()
+        results = session.query.filter(Scripts.emp_name == actor).\
+                  filter(Scripts.episode_id >= start).\
+                  filter(Scripts.episode_id <= end).all()
     return jsonify(results)
 
-@app.route("/api/v1.0/add_book", methods=('POST'))
-def add_book():
-    return 0
+
+@app.route("/api/v1.0/episode/start", methods=('GET'))
+@app.route("/api/v1.0/episode/start/end", methods=('GET'))
+def episode_lookup(start=None, end=None)
+    if not start:
+        result = {}
+    elif not end:
+        results = session.query.filter(Scripts.episode_id = start).all()
+    else:
+        results = session.query.filter(Scripts.episode_id >= start).\
+                  filter(Scripts.episode_id < = end).all()
+    return jsonify(results)
+
 
 @app.route("/", methods=('GET'))
 def index():
-    results = Book.query.all()
+    results = {} 
     return jsonify(reults)
 
 if __name__ == '__main__':
