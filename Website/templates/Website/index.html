@@ -1,293 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
-</head>
+<title>Threat Level Midnight!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link href="style.css" rel="stylesheet">
+
+
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-<div class="container-fluid">
-	<a class="navbar-brand" href="#"><img src="img/The_Office_NBC_logo.png"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse"
-	data-target="#navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="#">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Analytics</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Team</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Learn</a>
-			</li>
-		</ul>
-	</div>
-</div>
-</nav>
+    <!--- Title-->
+    <div class="title">
+        <div class="container text-center">
+            <img src="img/R.png" class="img-fluid" />
+            <h1 class="display-1"><em>a Deep Dive</em></h1>
+            <h2>What can data tell us about this beloved sitcom?</h2>
+        </div>
+    </div>
 
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-<ul class="carousel-indicators">
-	<li data-target="#slides" data-slide-to="0" class="active"></li>
-	<li data-target="#slides" data-slide-to="1"></li>
-	<li data-target="#slides" data-slide-to="2"></li>
-</ul>
-<div class="carousel-inner">
-	<div class="carousel-item active">
-		<img src="img/poster-the-office-season-2.png">
-		<div class="carousel-caption">
-			<h1 class="display-2">The Office</h1>
-			<h3>Analytics of America's Favorite tv show</h3>
-			<button type="button" class="btn btn-outline-light bn-lg">Machine Learning
-			</button>
-			<button type="button" class="btn btn-primary-light bn-lg">About
-			</button>
-		</div>
-	</div>
-	<div class="carousel-item">
-		<img src="img/Cast2.png">
-	</div>
-	<div class="carousel-item">
-		<img src="img/616892_10151061804364748_890759428_o.png">
-	</div>
-</div>
-</div>
 
-<!--- Jumbotron -->
-<div class="container-fluid">
-<div class="row jumbotron">
-	<div class="col-xs-12 col-sm-2 col-md-9 col-lg-9 col-xl-10">
-		<p class="lead">Class assignments to impress.</p>
-	</div>
-	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-		<a href="#"<button type="button" class="btn btn-outline-secondary
-		btn-lg">Data Analytics</button></a>
-	</div>
-</div>
-</div>
-
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">Built with ease.</h1>
-	</div>
-	<hr>
-	<div class="col-12">
-		<p class="lead">Welcome</p>
-	</div>
-</div>
-</div>
-
-    <!-- Second Grid -->
-    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <div class="w3-content">
-			<div class="col-12">
-				<h1 class="display-4">Sentiment</h1>
-			</div>
-            <div class="w3-twothird">
-                <h1>Machine Learning</h1>
-                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. </h5>
-                <p class="w3-text-grey"> commodo consequat.</p>
-            </div>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/8648557">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <!-- Project Overview -->
+    <div class="overview">
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="card-body">
+                    <h1>Project Overview </h1>
+                    <h2>2020 - the beginning of the Pandemic. Unprecedented restrictions of movements and
+                        lockdowns.<br>
+                        What do most people do when they are stuck at home?<br>
+                        <br>
+                        Watch "the office".<br>
+                        <br>
+                        According to Nielsen, "The Office" had more than 57 billion minutes streamed in 2020
+                        (source).
+                        Why is the show so popular even after nearly a decade from its original airing?
+                        In recent years, many podcasts have popped up trying to answer this question.
+                        These podcasts track the history of the show and take deep dives into various episodes to
+                        figure out the answer,
+                        but we are turning to data science to unravel the mystery.
+                        What can data analysis, natural language processing, and machine learning from the script
+                        tell us about why
+                        "The Office" is so popular?
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
 
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h1 class="display-4">Graphs with Flourish and D3</h1>
-	</div>
-	<hr>
-	<div class="col-12">
-		<p class="lead">Welcome</p>
-	</div>
-	<div class="col-lg-6">
-		<h2 class="display-4">Who had the most lines?</h2>
-		<div class="col-12">
-			<p class="lead">Value in scripted lines per episode and season, cumulative over all time</p>
-		</div>
-        <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8739386">
-			<script src="https://public.flourish.studio/resources/embed.js"></script>
-		</div>
-	</div>
-	<div class="col-lg-6">
-        <iframe width="100%" height="800" frameborder="0"
-        src="https://observablehq.com/embed/@kateyharris/bar-chart-race?cells=chart%2Cviewof+replay%2Ctitle"></iframe>
-	</div>
-</div>
-</div>
+    <!--- Two Column Machine Learning Form -->
+    <div class="machine_learn">
+        <div class="row align-items-center justify-content-center">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h1 class="display-4">Machine Learning Model</h1>
+                </div>
+                <hr>
+                <div class="col-lg-6">
+                    <img
+                        src=http://images4.fanpop.com/image/photos/16100000/Michael-Animated-gif-the-office-16137757-300-169.gif />
+                    <h2 class="display-4">What would Micheal say?</h2>
+                    <div class="col-12">
+                        <p class="lead">Value in scripted lines per episode and season, cumulative over all time</p>
+                    </div>
+                    <h1>Machine Learing using Flask</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-<hr class="my-4">
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
-		</div>
-	</div>
-</figure>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                        </p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Machine Learning piece-->
+                    <form action="/prediction_route" method="POST">
+                        <!-- <p>Make Michael Talk <input type = "text"/></p> -->
+                        <h2>Make Michael Talk <input type="text" name="michael_talks" /></h2>
+                        <h2><input type="Submit" value="Talk to me!" /></h2>
+                        <h2><label id="prediction" name="prediction"></label></h2>
+                        <h2>{% if prediction != None %}
+                            {{prediction}}
+                            {% endif %}
+                        </h2>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-<!--- Emoji Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun.
-</button>
-<div id="emoji" class="collapse">
-<div class="container-fluid padding">
-<div class="row text-center">
-	<div class="col-sm-12">
-		<img class="gif" src="img/high5.gif">
-	</div>
-</div>
-</div>
-</div>
-  
-<!--- Meet the team -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-sm-12">
-		<h1 class="display-4">Meet the Team</h1>
-	</div>
-	<hr>
-</div>
-</div>
+    <!-- Analytics Header -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="card-body">
+                <hr>
+                <h1>Analytics Overview </h1>
+                <h2>2020 - the beginning of the Pandemic. Unprecedented restrictions of movements and
+                    lockdowns.<br>
+                    What do most people do when they are stuck at home?
+                    According to Nielsen, "The Office" had more than 57 billion minutes streamed in 2020.
+                    Why is the show so popular even after nearly a decade from its original airing?
+                    In recent years, many podcasts have popped up trying to answer this question.
+                    These podcasts track the history of the show and take deep dives into various episodes to
+                    figure out the answer
+                </h2>
+                
+            </div>
+        </div>
+        <hr>
+    </div>
+ 
 
-<!--- Cards -->
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/funkocharacters.png">
-			<div class="card-body">
-				<h4 class="card-title">Michael</h4>
-				<p class="card-text">Michael is a internet entrepreneur with 
-				almost 20 years of experience.</p>
-				<a href="#" class="btn btn-outline-secondary">See Profile</a>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/funkocharacters.png">
-			<div class="card-body">
-				<h4 class="card-title">Dwight</h4>
-				<p class="card-text">Dwight is a designer with almost 10 years of
-				dital design experienc.</p>
-				<a href="#" class="btn btn-outline-secondary">See Profile</a>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/funkocharacters.png">
-			<div class="card-body">
-				<h4 class="card-title">Jim</h4>
-				<p class="card-text">Jim is a developer with 
-				over 5 years of development experience.</p>
-				<a href="#" class="btn btn-outline-secondary">See Profile</a>
-			</div>
-		</div>		
-	</div>
-</div>
-</div>
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-lg-6">
-		<h2>Our Philosophy</h2>
-		<p>bla bla bla</p>
-		<p>bla bla bla</p>
-		<br>
-	</div>
-	<div class="col-lg-6">
-		<img src="img/jim.gif" class="img-fluid">
-	</div>
-</div>
-</div>
+    <!--- Two Column Bar Chart Race Section -->
+    <div class="bar_chart_race">
+        <div class="container-fluid padding">
+ 
+            <div class="row text-center padding">
+                <div class="col-12">
+                    
+                    <h1 class="display-4">Bar Chart Race</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">Welcome</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/8739386">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-4">Who had the most lines?</h2>
+                    <div class="col-12">
+                        <p class="lead">Value in scripted lines per episode and season, cumulative over all time</p>
+                    </div>
+                    <h1>Bar Chart Race</h1>
+                    <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-<!--- Connect -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Connect</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a href="#"><i class="fab fa-facebook"></i></a>
-		<a href="#"><i class="fab fa-twitter"></i></a>
-		<a href="#"><i class="fab fa-google-plus-g"></i></a>
-		<a href="#"><i class="fab fa-instagram"></i></a>
-		<a href="#"><i class="fab fa-youtube"></i></a>
-	</div>
+                    <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
-</div>
-<!--- Footer -->
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center">
-	<div class="col-md-4">
-		<img src="img/The_Office_NBC_logo.png">
-		<hr class="light">
-		<p>555-555-55555</p>
-		<p>myemail@email.com</p>
-		<p>100 Street Name</p>
-		<p>City, State 88888</p>
-	</div>
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Our Hours</h5>
-		<hr class="light">
-		<p>Monday: 9-5</p>
-		<p>Saturday: 9-12</p>
-		<p>Sunday: Closed</p>
-	</div>
-	<div class="col-md-4">
-		<hr class="light">
-		<h5>Service Area</h5>
-		<hr class="light">
-		<p>City, State 88888</p>
-		<p>City, State 88888</p>
-		<p>City, State 88888</p>
-		<p>City, State 88888</p>
-	</div>
+    <!--- Two Column Sentiment Chart Section -->
+    <div class="sentiment">
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <hr>
+                    <h1 class="display-4">Sentiment</h1>
+                </div>
+                <hr>
+                <div class="col-lg-6">
+                    <h2 class="display-4">Who was most liked?</h2>
+                    <div class="col-12">
+                        <p class="lead">Value in scripted lines per episode and season, cumulative over all time</p>
+                    </div>
+                    <h1>Sentiment Scores</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
 
-</div>
-</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/8648557">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</footer>
+    <!--- Two Column Section -->
+    <div class="left_sec">
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <hr>
+                    <h1 class="display-4">Ratings</h1>
+                </div>
+                <hr>
+                <div class="col-lg-6">
+                    <img src="img/R.png" alt="My Image" class="img-fluid" />
+                </div>
+                <div class="col-lg-6">
+                    <h4>Ratings Sentiment</h4>
+                    <p>bla bla bla</p>
+                    <p>bla bla bla</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="right_sec">
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-lg-6">
+                    <h2>Our Philosophy</h2>
+                    <p>bla bla bla</p>
+                    <p>bla bla bla</p>
+                    <br>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/R.png" alt="My Image" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
+    <!--- Creators Header -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-sm-12">
+                <hr>
+                <h1 class="display-4">The Creators</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <!--- Creators Five Sections -->
+    <div class="five_sec">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-12 align-items-center">
+                    <div class="col-lg-2">
+                        <img class="card-img-top"
+                            src="https://2.bp.blogspot.com/-dtaJiZoBwH4/UQlDDiy7g1I/AAAAAAAAAQ0/2WVV-V_aGmw/s320/MichaelTheOffice.jpg"
+                            class="img-fluid" />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">John is a internet entrepreneur with
+                                almost 20 years of experience.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="card-img-top"
+                            src="https://2.bp.blogspot.com/-dtaJiZoBwH4/UQlDDiy7g1I/AAAAAAAAAQ0/2WVV-V_aGmw/s320/MichaelTheOffice.jpg"
+                            class="img-fluid" />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">John is a internet entrepreneur with
+                                almost 20 years of experience.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="card-img-top"
+                            src="https://2.bp.blogspot.com/-dtaJiZoBwH4/UQlDDiy7g1I/AAAAAAAAAQ0/2WVV-V_aGmw/s320/MichaelTheOffice.jpg"
+                            class="img-fluid" />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">John is a internet entrepreneur with
+                                almost 20 years of experience.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="card-img-top"
+                            src="https://2.bp.blogspot.com/-dtaJiZoBwH4/UQlDDiy7g1I/AAAAAAAAAQ0/2WVV-V_aGmw/s320/MichaelTheOffice.jpg"
+                            class="img-fluid" />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">John is a internet entrepreneur with
+                                almost 20 years of experience.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="card-img-top"
+                            src="https://2.bp.blogspot.com/-dtaJiZoBwH4/UQlDDiy7g1I/AAAAAAAAAQ0/2WVV-V_aGmw/s320/MichaelTheOffice.jpg"
+                            class="img-fluid" />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">John is a internet entrepreneur with
+                                almost 20 years of experience.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--- Hidden Section -->
+
+    <!-- <button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun.</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/panda.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/poo.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/unicorn.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/chicken.gif">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Name</h5>
+                    <hr class="light">
+                    <p>myemail@email.com</p>
+                    <p>100 Street Name</p>
+                    <p>City, State 88888</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Name</h5>
+                    <hr class="light">
+                    <p>myemail@email.com</p>
+                    <p>100 Street Name</p>
+                    <p>City, State 88888</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Name</h5>
+                    <hr class="light">
+                    <p>myemail@email.com</p>
+                    <p>100 Street Name</p>
+                    <p>City, State 88888</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
 </body>
+
 </html>
-
-
-
-
-<!-- View in Browser: Drew's #1 Trending YouTube Tutorial -->
-
-<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->
-
-
