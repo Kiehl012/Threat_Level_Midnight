@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, render_template, jsonify, request
 from flask import request
 import tensorflow as tf
@@ -72,5 +72,5 @@ def prediction_post():
         # return render_template("index.html", prediction=user_txt)
 
 if __name__ == "__main__":
->>>>>>> cef6244ff827d1b3937f69beff9e9b0241cfdd6f
+
     app.run(debug=True)
