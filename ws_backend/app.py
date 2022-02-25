@@ -26,9 +26,9 @@ def help():
     ''')
 
 
-@app.route("/api/v1.0/actor", methods=['GET'])
-@app.route("/api/v1.0/actor/start", methods=['GET'])
-@app.route("/api/v1.0/actor/start/end") 
+@app.route("/api/v1.0/actor/<actor>", methods=['GET'])
+@app.route("/api/v1.0/actor/<actor>/<start>", methods=['GET'])
+@app.route("/api/v1.0/actor/<actor>/<start>/<end>") 
 def actor_lookup(actor, start=None, end=None):
     if not start:
         results = session.query.filter(Scripts.emp_name == actor).all()
@@ -42,8 +42,8 @@ def actor_lookup(actor, start=None, end=None):
     return jsonify(results)
 
 
-@app.route("/api/v1.0/episode/start", methods=['GET'])
-@app.route("/api/v1.0/episode/start/end", methods=['GET'])
+@app.route("/api/v1.0/episode/<episode>/<start>", methods=['GET'])
+@app.route("/api/v1.0/episode/<episode>/<start>/<end>", methods=['GET'])
 def episode_lookup(start=None, end=None):
     if not start:
         result = {}
