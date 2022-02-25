@@ -11,7 +11,12 @@ class Characters(Base):
     __tablename__ = 'characters'
     emp_id = Column(Integer, primary_key=True)
     emp_name = Column(String(256))
-
+    
+    def columns_to_dict(self):
+        dict_ = {}
+        for key in self.__mapper__.c.keys():
+            dict_[key] = getattr(self, key)
+        return dict_
 
 class Episodes(Base):
     """
@@ -27,6 +32,11 @@ class Episodes(Base):
     writer = Column(String)
     director = Column(String)
 
+    def columns_to_dict(self):
+        dict_ = {}
+        for key in self.__mapper__.c.keys():
+            dict_[key] = getattr(self, key)
+        return dict_
 
 class Scripts(Base):
     """
@@ -40,3 +50,9 @@ class Scripts(Base):
     season = Column(Integer)
     episode = Column(Integer)
     sentiment = Column(Float)
+
+    def columns_to_dict(self):
+        dict_ = {}
+        for key in self.__mapper__.c.keys():
+            dict_[key] = getattr(self, key)
+        return dict_
