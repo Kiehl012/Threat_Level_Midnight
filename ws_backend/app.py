@@ -31,34 +31,41 @@ def help():
 @app.route("/api/v1.0/actor/<actor>/<start>/<end>") 
 def actor_lookup(actor, start=None, end=None):
     if not start:
-        results = session.query.filter(Scripts.emp_name == actor).all()
+        results = db_session.query(Scripts).filter(Scripts.emp_name == actor).all()
     elif not end:
-        results = session.query.filter(Scripts.emp_name == actor).\
+        results = db_session.query(Scripts).filter(Scripts.emp_name == actor).\
                   filter(Scripts.episode_id >= start).all()
     else:
-        results = session.query.filter(Scripts.emp_name == actor).\
+        results = db_session.query(Scripts).filter(Scripts.emp_name == actor).\
                   filter(Scripts.episode_id >= start).\
                   filter(Scripts.episode_id <= end).all()
-    return jsonify(results)
+    result = [] 
+    for obj in results:
+        result.append(obj.columns_to_dict())
+    return jsonify(result)
 
 
-@app.route("/api/v1.0/episode/<episode>/<start>", methods=['GET'])
-@app.route("/api/v1.0/episode/<episode>/<start>/<end>", methods=['GET'])
+@app.route("/api/v1.0/episode/<start>", methods=['GET'])
+@app.route("/api/v1.0/episode/<start>/<end>", methods=['GET'])
 def episode_lookup(start=None, end=None):
     if not start:
         result = {}
     elif not end:
-        results = session.query.filter(Scripts.episode_id == start).all()
+        results = db_session.query(Scripts).filter(Scripts.episode_id == int(start)).all()
     else:
-        results = session.query.filter(Scripts.episode_id >= start).\
-                  filter(Scripts.episode_id <= end).all()
-    return jsonify(results)
+        results = db_session.query(Scripts).filter(Scripts.episode_id >= int(start)).\
+                  filter(Scripts.episode_id <= int(end)).all()
+    result = []
+    for obj in results:
+        result.append(obj.columns_to_dict())
+    print(result)
+    return jsonify(result)
 
 
 @app.route("/", methods=['GET'])
 def index():
-    results = {} 
-    return jsonify(results)
+    results = [{}] 
+    return jsonify(result)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5090, debug=True)
