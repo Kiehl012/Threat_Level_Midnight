@@ -16,6 +16,7 @@ Ratings: https://www.ratingraph.com/tv-shows/the-office-ratings-17546/#episodes
 
 - Tableau:<br> 
 https://public.tableau.com/views/TheOffice_16443470522060/theofficelinesbyseason?:language=en-US&:display_count=n&:origin=viz_share_link
+![image](https://user-images.githubusercontent.com/90797036/155823349-9d963157-b9ce-45cf-88ce-94fab6656c76.png)
 
 
 # Machine Learning
