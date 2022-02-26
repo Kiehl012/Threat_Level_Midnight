@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  color:black;
+  padding-top: 20px;
+  padding: 5px; 
+  background:white;
+}
+.padding{
+  padding-bottom: 20px;
+}
+
+.title {
+  color:#6c7fee;
+  font-family: "American Typewriter", serif;
+}
+
+.machine_learn{
+  background:lightgrey;
+}
+.text_box{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.form{
+  text-align: center;
+  background-size: 70%;
+  border-width: 5px;
+  border-color: rgb(65, 65, 63);
+  border-style: ridge;
+  padding: 10px;
+}
+
+
+
+button {
+ --button_radius: 0.75em;
+ --button_color: #e8e8e8;
+ --button_outline_color: #6c7fee;
+ font-size: 20px;
+ font-weight: bold;
+ border: none;
+ border-radius: var(--button_radius);
+ background: var(--button_outline_color);
+ margin: auto;
+ 
+}
+.button_top {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid var(--button_outline_color);
+ border-radius: var(--button_radius);
+ padding: 0.75em 1.5em;
+ background: var(--button_color);
+ color: var(--button_outline_color);
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
+}
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+ transform: translateY(-0.33em);
+}
+button:active .button_top {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
+}
+
+
+.type_writter{
+  background:lightgrey;
+  font-family:"American Typewriter", serif; 
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: 4px;
+  font-size: 1vw; 
+   animation:
+    typing 3.5s steps(20, end),
+    animated-cursor .5s step-end infinite;
+} 
+
+@keyframes typing{
+  from { width: 0 }
+  to{ width: 100% }
+}
+
+@keyframes animated-cursor{
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.bar_chart_race {
+  background:lightgrey;
+}
+
+.script{
+  background-image: url("../images/Confidential-Watermark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  border-width: 2px;
+  border-color: rgb(202, 202, 66);
+  border-style: ridge;
+  padding: 20px;
+  /* background: rgb(255, 255, 196); */
+}
+
+.left_sec {
+  background:lightgrey;
+}
+
+
+.five_sec {
+  background:lightgrey;
+
+}
+
+.column-5-left {
+  padding-left: 250px;
+}
+
+.column-5-middle {
+  align-items: center;
+}
+
+.column-5-right {
+  padding-right: 100px;
+}
+
+
+
+
+
+
+
