@@ -4,7 +4,7 @@ from flask import request
 import tensorflow as tf
 import numpy as np
 
-one_step_reloaded = tf.saved_model.load('RNN_Model')
+one_step_reloaded = tf.saved_model.load('../Text_Gen_Model/RNN_Model')
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
