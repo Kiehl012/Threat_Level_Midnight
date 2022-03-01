@@ -11,9 +11,11 @@ According to Nielsen, "The Office" had more than 57 billion minutes streamed in 
 What can data analysis, natural language processing, and machine learning from the script tell us about why "The Office" is so popular?
 
 ## Data Source and Questions to Answer
-### Data Source: 
-[transcripts.foreverdreaming.org](https://transcripts.foreverdreaming.org/viewtopic.php?f=574&t=25301&sid=55341a4d23dec85533d960b6ff9edc2a)
+### Data Sources: 
+- [transcripts.foreverdreaming.org](https://transcripts.foreverdreaming.org/viewtopic.php?f=574&t=25301&sid=55341a4d23dec85533d960b6ff9edc2a)
 This website hosts transcripts of many popular TV shows and movies.
+- [ratinggraph.com](https://www.ratingraph.com/tv-shows/the-office-ratings-17546/#episodes) This website host ratings of tv shows and movies 
+- [Wikipedia](https://en.wikipedia.org/wiki/The_Office_(American_TV_series)) Where we found episode details such as writer, director and air date.
 
 ### Questions to Answer:
 1) Who are the characters of "The Office"?   
@@ -22,8 +24,9 @@ This website hosts transcripts of many popular TV shows and movies.
 4) Can we generate text for one or more characters with NLP Machine Learning?
 
 ## Data Pipeline
-- Scrape script from the website (API, Python)
-- ETL and store in a SQL database (NLP, Python, SQL)
+- Scrape script from the websites (BeautifulSoup, Browser)
+- Data Cleaning (pandas, numpy)
+- Data Analysis (pandas, vaderSentiment)
 - Query the data and create javascript arrays (Javascript, Python, SQL)
 - Visualize on webpage (Javascript)
 - Predict sentences spoken by character(s) (NLP, RNN, Python)
