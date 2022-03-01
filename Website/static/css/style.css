@@ -74,11 +74,12 @@ button:active .button_top {
   background:lightgrey;
   font-family:"American Typewriter", serif; 
   overflow: hidden;
+  border-right: .15em solid #6c7fee;
   white-space: nowrap;
   margin: 0 auto; 
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-size: 1vw; 
-   animation:
+  animation:
     typing 3.5s steps(20, end),
     animated-cursor .5s step-end infinite;
 } 
@@ -90,7 +91,7 @@ button:active .button_top {
 
 @keyframes animated-cursor{
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: #6c7fee; }
 }
 
 .bar_chart_race {
@@ -130,7 +131,6 @@ button:active .button_top {
 .column-5-right {
   padding-right: 100px;
 }
-
 
 
 
