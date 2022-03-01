@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, jsonify, request
 from flask import request
 import tensorflow as tf
@@ -45,3 +44,4 @@ def prediction_post():
 
 if __name__ == "__main__":
     app.run(debug=True)
+

@@ -32,3 +32,4 @@ This website hosts transcripts of many popular TV shows and movies.
 
 ## References
 [Text Generation with RNN](https://www.tensorflow.org/text/tutorials/text_generation)
+

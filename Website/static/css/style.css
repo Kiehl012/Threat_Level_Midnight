@@ -3,169 +3,135 @@
 html, body {
   height: 100%;
   width: 100%;
-  /* //font-family: "American Typewriter", serif; */
   font-family: "Lato", sans-serif;
   color:black;
-  /* padding: 20px; */
+  padding-top: 20px;
+  padding: 5px; 
   background:white;
+}
+.padding{
+  padding-bottom: 20px;
 }
 
 .title {
   color:#6c7fee;
+  font-family: "American Typewriter", serif;
 }
 
 .machine_learn{
-background:lightgrey;
+  background:lightgrey;
+}
+.text_box{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.form{
+  text-align: center;
+  background-size: 70%;
+  border-width: 5px;
+  border-color: rgb(65, 65, 63);
+  border-style: ridge;
+  padding: 10px;
+}
+
+
+
+button {
+ --button_radius: 0.75em;
+ --button_color: #e8e8e8;
+ --button_outline_color: #6c7fee;
+ font-size: 20px;
+ font-weight: bold;
+ border: none;
+ border-radius: var(--button_radius);
+ background: var(--button_outline_color);
+ margin: auto;
+ 
+}
+.button_top {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid var(--button_outline_color);
+ border-radius: var(--button_radius);
+ padding: 0.75em 1.5em;
+ background: var(--button_color);
+ color: var(--button_outline_color);
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
+}
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+ transform: translateY(-0.33em);
+}
+button:active .button_top {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
+}
+
+
+.type_writter{
+  background:lightgrey;
+  font-family:"American Typewriter", serif; 
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: 4px;
+  font-size: 1vw; 
+   animation:
+    typing 3.5s steps(20, end),
+    animated-cursor .5s step-end infinite;
+} 
+
+@keyframes typing{
+  from { width: 0 }
+  to{ width: 100% }
+}
+
+@keyframes animated-cursor{
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 .bar_chart_race {
   background:lightgrey;
 }
+
+.script{
+  background-image: url("../images/Confidential-Watermark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  border-width: 2px;
+  border-color: rgb(202, 202, 66);
+  border-style: ridge;
+  padding: 20px;
+  /* background: rgb(255, 255, 196); */
+}
+
 .left_sec {
   background:lightgrey;
 }
 
-.col-lg-2 {
-  background:lightgrey;
-  box-sizing: 10px;
-  border-color: rgb(163, 162, 162);
-}
 
 .five_sec {
-  width: 100%;
-  margin-left: 200px;
-}
+  background:lightgrey;
 
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;
-}
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-  padding-bottom: 1rem;
-}
-.btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #563d7c;
-}
-.btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
-}
-
-.padding {
-  padding-bottom: 2rem;
-}
-.welcome {
-  width: 2400;
-  margin: auto;
-  padding-top: 2rem;
-}
-.welcome hr {
-  border-top: 2px solid #b4b4b4;
-  width: 2400px;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
-.fa-code {
-  color: #e54d26;
-}
-.fa-bold{
-  color: #563d7c;
 }
 
 .column-5-left {
-  width: 380px;
-  padding: 20px;
-  float: right;
-  margin-right: 10px;
+  padding-left: 250px;
 }
 
 .column-5-middle {
-  width: 380px;
-  padding: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  align-items: center;
 }
 
 .column-5-right {
-  width: 380px;
-  padding: 20px;
-  float: left;
-  margin-left: 10px;
-}
-
-.row .col {
-  height: 100px;
-  width: 90px;
-  padding: 20px;
-}
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
-  
+  padding-right: 100px;
 }
 
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/The-Office_wallpaper_015465.jpg');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
 
 
 
