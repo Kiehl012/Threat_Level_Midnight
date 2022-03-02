@@ -70,7 +70,7 @@ button:active .button_top {
 }
 
 
-.type_writter{
+/* .type_writter{
   background:lightgrey;
   font-family:"American Typewriter", serif; 
   overflow: hidden;
@@ -92,7 +92,7 @@ button:active .button_top {
 @keyframes animated-cursor{
   from, to { border-color: transparent }
   50% { border-color: #6c7fee; }
-}
+} */
 
 .bar_chart_race {
   background:lightgrey;
