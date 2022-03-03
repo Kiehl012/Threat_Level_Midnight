@@ -27,8 +27,7 @@ This website hosts transcripts of many popular TV shows and movies.
 - Scrape script from the websites (BeautifulSoup, Browser)
 - Data Cleaning (pandas, numpy)
 - Data Analysis (pandas, vaderSentiment)
-- Query the data and create javascript arrays (Javascript, Python, SQL)
-- Visualize on webpage (Javascript)
+- Visualize on webpage (Florish and Tableau)
 - Predict sentences spoken by character(s) (NLP, RNN, Python)
 
 
