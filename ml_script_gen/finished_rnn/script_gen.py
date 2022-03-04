@@ -19,7 +19,7 @@ dwight_states = jim_states = pam_states = andy_states = None
 dwight_nchar = jim_nchar = pam_nchar = andy_nchar = tf.constant(["Michael..."])
 
 
-for lines in range(6):
+for lines in range(30):
     mike_result = []
     dwight_result = []
     jim_result = []
@@ -72,11 +72,30 @@ for lines in range(6):
 
     end = time.time()
 
-    for result in [ mike_loop_result, dwight_loop_result,
-                   jim_loop_result, pam_loop_result,
-                   andy_loop_result ]: 
-        #print(result[0].numpy().decode('utf-8'), '\n\n' + '_'*80)
-        print(result[0].numpy().decode('utf-8'), '\n' + '_'*80)
+    char_speech = {}
+    char_speech['michael'] = mike_loop_result
+    char_speech['dwight'] = dwight_loop_result
+    char_speech['jim'] = jim_loop_result
+    char_speech['pam'] = pam_loop_result
+    char_speech['andy'] = andy_loop_result
+
+    print('\n')
+    for char, result in char_speech.items():
+        punct = ['!', '?', '.']
+        text_output = result[0].numpy().decode('utf-8')
+        text_output.lstrip()
+        text_output.rstrip()
+        rtext = text_output[::-1]
+        for p in punct:
+            if not rtext.startswith(p):
+                rtext = rtext[1::]
+            else:
+                break
+        final_text = rtext[::-1]
+
+        print(char, ': ', final_text)
+        #print(char, ': ', result[0].numpy().decode('utf-8'), '\n')
+        #print('\n')
         result = None
-    print('\nRun time:', end - start)
+    print('Run time:', end - start, '\n')
 
