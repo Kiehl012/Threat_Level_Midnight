@@ -10,22 +10,21 @@ According to Nielsen, "The Office" had more than 57 billion minutes streamed in 
 
 What can data analysis, natural language processing, and machine learning from the script tell us about why "The Office" is so popular?
 
-## Data Source and Questions to Answer
 ### Data Sources: 
 - [transcripts.foreverdreaming.org](https://transcripts.foreverdreaming.org/viewtopic.php?f=574&t=25301&sid=55341a4d23dec85533d960b6ff9edc2a)
 This website hosts transcripts of many popular TV shows and movies.
 - [ratinggraph.com](https://www.ratingraph.com/tv-shows/the-office-ratings-17546/#episodes) This website host ratings of tv shows and movies 
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Office_(American_TV_series)) Where we found episode details such as writer, director and air date.
 
-### Questions to Answer:
+<!-- ### Questions to Answer:
 1) Who are the characters of "The Office"?   
 2) Which character had the most lines throughout the show?
 3) What was each character's overall sentiment throughout the show?   
-4) Can we generate text for one or more characters with NLP Machine Learning?
+4) Can we generate text for one or more characters with NLP Machine Learning? -->
 
 ## Having Fun With Data Science 
 
-We can use data analytics and machine learning to do really serious and important things in the field of health care, we can help our businesses increase profit margins, or we can revolutionize molecular biology. But... tt can also be something to play with, to dig into hobby topics, and be used to find beauty in ordinary things. 
+We can use data analytics and machine learning to do really serious and important things in the field of health care, we can help our businesses increase profit margins, or we can revolutionize molecular biology. But... it can also be something to play with, to dig into hobby topics, and be used to find beauty in ordinary things. 
 
 When deciding to use the script of The Office as the data source for this project, having fun was top of mind. Working with written word also presented unique opportunites and challenges. The big challenge to tackle... could we use the date to traine a machine learning model to generate characters lines? Or even genearte a scene from The Office?
 
@@ -34,9 +33,12 @@ When deciding to use the script of The Office as the data source for this projec
 
 ### Does it speak?
 
-### What can we see? 
-Once the script was cleaned and strucutred by season, epdisode, and character
 
+### What can we see? 
+Once the script was cleaned and strucutred by season, episode, and character we were able to apply a sentiment analysis to each line in the script. We opted to use vaderSentiment over textblob. While both 
+
+### And Scene 
+The final challenge, could we make a computer generated scene for The Office? Checkout the scene at the bottom of the website and let us know what you think?
 
 ## Data Pipeline
 - Scrape script from the websites (BeautifulSoup, Browser)
