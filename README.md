@@ -26,16 +26,17 @@ This website hosts transcripts of many popular TV shows and movies.
 
 We can use data analytics and machine learning to do really serious and important things in the field of health care, we can help our businesses increase profit margins, or we can revolutionize molecular biology. But... it can also be something to play with, to dig into hobby topics, and be used to find beauty in ordinary things. 
 
-When deciding to use the script of The Office as the data source for this project, having fun was top of mind. Working with written word also presented unique opportunites and challenges. The big challenge to tackle... could we use the date to traine a machine learning model to generate characters lines? Or even genearte a scene from The Office?
+When deciding to use the script of The Office as the data source for this project, having fun was top of mind. Working with written word also presented unique opportunities and challenges. The big challenge to tackle... could we use the data to train a machine learning model to generate characters lines? Or even genearate a scene from The Office?
 
 ### Getting the Data
 [Transcripts Forever Dreaming](https://transcripts.foreverdreaming.org/about/) is a fan run site where individuals have taken the time to transcribe many television shows. The site has been around since the "days of dial-up modems." The scripts were simply enough to scrape from the HTML as it was dated. But having humans transcribe the shows introduced a higher volume of typos and cleaning to be done. 
 
 ### Does it speak?
+In our pursuit of reincarnating the our favorite characters from the show, wanted to create an interactive text generator that would be recognizable to fans of the show. We tested a few different different models, but ultimately decided to use a Recurring Neural Network (RNN) model. In addition to producing the best results, the RNN model was easier to use and computationally less expensive than other models we tested. When it was time to train the model, we chose Michael Scott, the main character. He had the most lines of any other character in the show and we thought if anyone had a personality that was big enough to shine through, it would be his. The result is an interactive text generator that, while imperfect, is undeniably Michael Scott, the lovably awkward Regional Manager of Dunder Mifflin, Scranton.
 
-
+ 
 ### What can we see? 
-Once the script was cleaned and strucutred by season, episode, and character we were able to apply a sentiment analysis to each line in the script. We opted to use vaderSentiment over textblob. While both 
+Once the script was cleaned and structured by season, episode, and character we were able to apply a sentiment analysis to each line in the script. We opted to use vaderSentiment over textblob. While both 
 
 ### And Scene 
 The final challenge, could we make a computer generated scene for The Office? Checkout the scene at the bottom of the website and let us know what you think?
