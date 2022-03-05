@@ -26,10 +26,12 @@ This website hosts transcripts of many popular TV shows and movies.
 
 We can use data analytics and machine learning to do really serious and important things in the field of health care, we can help our businesses increase profit margins, or we can revolutionize molecular biology. But... it can also be something to play with, to dig into hobby topics, and be used to find beauty in ordinary things. 
 
-When deciding to use the script of The Office as the data source for this project, having fun was top of mind. Working with written word also presented unique opportunities and challenges. The big challenge to tackle... could we use the data to train a machine learning model to generate characters lines? Or even genearate a scene from The Office?
+
+When deciding to use the script of The Office as the data source for this project, having fun was top of mind. Working with written word also presented unique opportunites and challenges. The big challenge to tackle... could we use the data to traine a machine learning model to generate characters lines? Or even generate a scene from The Office?
+
 
 ### Getting the Data
-[Transcripts Forever Dreaming](https://transcripts.foreverdreaming.org/about/) is a fan run site where individuals have taken the time to transcribe many television shows. The site has been around since the "days of dial-up modems." The scripts were simply enough to scrape from the HTML as it was dated. But having humans transcribe the shows introduced a higher volume of typos and cleaning to be done. 
+[Transcripts Forever Dreaming](https://transcripts.foreverdreaming.org/about/) is a fan run site where individuals have taken the time to transcribe many television shows. The site has been around since the "days of dial-up modems." The scripts were simple enough to scrape from the HTML as it was dated, but having humans transcribe the shows introduced a higher volume of typos and clean up to be done. 
 
 
 ### Does it speak?
