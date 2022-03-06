@@ -47,7 +47,7 @@ The final challenge, could we make a computer generated scene for The Office? Ch
 
  In this machine generated script, we prompted Michael with "Dwight" and let the model generate
                         sentences for Michael. Dwight's lines are then fed off of Michael's, Jim's off of Dwight's,
-                        Pam's off of Jim's, and Andy's off of Pam.
+                        and Pam's off of Jim's.
                         <br> Once again, the model isn't perfect but it does bear some semblance to a scene from our
                         beloved sitcom.
 
@@ -59,7 +59,7 @@ The final challenge, could we make a computer generated scene for The Office? Ch
 - Predict sentences spoken by character(s) (NLP, RNN, Python)
 
 ## Future Analysis 
-The process for scraping and analysing data can be repeated for any of the tv shows hosted on Transcripts Forever Dreaming. The data from The Office could then be compared against other shows to find trends in audience favorites as well as how tv has changed over time.
+This process for scraping and analysing data can be repeated for any of the tv shows hosted on Transcripts Forever Dreaming. The data from The Office could then be compared against other shows to find trends in audience favorites as well as how tv has changed over time.
 
 ## References
 [Text Generation with RNN](https://www.tensorflow.org/text/tutorials/text_generation)
