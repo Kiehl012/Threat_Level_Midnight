@@ -3,7 +3,7 @@ from flask import request
 import tensorflow as tf
 import numpy as np
 
-one_step_reloaded = tf.saved_model.load('../Text_Gen_Model/RNN_Model')
+one_step_reloaded = tf.saved_model.load('./Text_Gen_Model/RNN_Model')
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -43,5 +43,5 @@ def prediction_post():
         # return render_template("index.html", prediction=user_txt)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5080, debug=True)
 
