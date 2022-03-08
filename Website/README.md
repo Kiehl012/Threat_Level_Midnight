@@ -13,5 +13,5 @@
 
 ## Run the application on localhost 
 
-1. Run the following commend in tthe CMD/Powershell to start the application
+1. Run the following command in the CMD/Powershell to start the application: python app.py
 2. Open http://localhost:5000 in browser or follow the direction in the output log.
