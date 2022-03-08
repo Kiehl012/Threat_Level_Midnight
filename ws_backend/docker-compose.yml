@@ -8,6 +8,7 @@ services:
       - env_file
     networks:
       - db_nw
+
   flaskapp:
     build: .
     env_file:
@@ -19,6 +20,15 @@ services:
       - web_nw
     depends_on:
       - db
+
+  website:
+    image: "website:latest"
+    networks:
+      - db_nw
+      - web_nw
+    depends_on:
+      - db
+
   nginx:
     image: "nginx:1.21.6"
     ports:
@@ -29,10 +39,13 @@ services:
       - web_nw
     depends_on: 
       - flaskapp
+      - website
+
 networks:
   db_nw:
     driver: bridge
   web_nw:
     driver: bridge
+
 volumes:
   dbdata:
