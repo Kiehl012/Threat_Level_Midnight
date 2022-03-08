@@ -11,6 +11,8 @@ services:
 
   flaskapp:
     build: .
+    ports:
+      - "8833:5090"
     env_file:
       - env_file
     volumes:
@@ -23,6 +25,8 @@ services:
 
   website:
     image: "website:latest"
+    ports:
+      - "8844:5080"
     networks:
       - db_nw
       - web_nw
@@ -33,6 +37,7 @@ services:
     image: "nginx:1.21.6"
     ports:
       - "8080:80"
+      - "8888:80"
     volumes:
       - ./conf.d:/etc/nginx/conf.d
     networks:
