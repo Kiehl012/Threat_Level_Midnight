@@ -1,4 +1,4 @@
-# Launching The Webiste 
+# Launching The Website 
 
 ## Requirments 
 
